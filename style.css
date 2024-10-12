@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* colors */
+  --clr-cyan-600: hsl(192, 37%, 48%);
+  --clr-cyan-300: hsl(192, 90%, 77%);
+  --clr-purple-600: hsl(268, 34%, 53%);
+  --clr-purple-300: hsl(268, 100%, 86%);
+  --clr-slate-900: hsl(240, 40%, 61%);
+  --clr-slate-600: hsl(240, 10%, 57%);
+  --clr-slate-300: hsl(240, 18%, 85%);
+  --clr-white: hsl(0, 0%, 98%);
+
+  /* typography */
+  --ff-main: "Red Hat Display", sans-serif;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: var(--ff-main);
+  background-color: var(--clr-white);
+  color: var(--clr-slate-900);
+}
+
+/* utilities */
+
+.text-1 {
+  font-size: 4rem;
+  line-height: 110%;
+}
+
+.text-2 {
+  font-size: 2.5rem;
+  line-height: 110%;
+}
+
+.text-3 {
+  font-size: 1rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: var(--clr-cyan-600);
+  letter-spacing: 4px;
+}
+
+.text-4 {
+  font-size: 1.125rem;
+  line-height: 110%;
+}
+
+.text-5 {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
