@@ -14,8 +14,38 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <!-- Meet makes it easy to connect with others face-to-face virtually and
-    collaborate across any device. Download v1.3 What is it? 01 Built for modern
+    <header>
+      <img src="./assets/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <section class="hero">
+        <div class="grid">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="./assets/desktop/image-hero-left.png"
+            />
+            <img
+              src="./assets/tablet/image-hero.png"
+              alt="avetors of different users"
+            />
+          </picture>
+          <div class="grid__content">
+            <h1 class="text-1">Group Chat for Everyone</h1>
+            <p class="text-5">
+              Meet makes it easy to connect with others face-to-face virtually
+              and collaborate across any device.
+            </p>
+            <div class="btn__flex">
+              <a href="#" class="btn btn--primary">Download <span>v1.3</span></a
+              ><a href="#" class="btn--accent">What is it?</a>
+            </div>
+          </div>
+          <div class="hero-image"></div>
+        </div>
+      </section>
+    </main>
+    <!-- 01 Built for modern
     use Smarter meetings, all in one place Send messages, share files, show your
     screen, and record your meetings — all in one workspace. Control who can
     join with invite-only team access, data encryption, and data export. 02

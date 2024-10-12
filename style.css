@@ -6,7 +6,7 @@
   --clr-cyan-300: hsl(192, 90%, 77%);
   --clr-purple-600: hsl(268, 34%, 53%);
   --clr-purple-300: hsl(268, 100%, 86%);
-  --clr-slate-900: hsl(240, 40%, 61%);
+  --clr-slate-900: hsl(240, 21%, 20%);
   --clr-slate-600: hsl(240, 10%, 57%);
   --clr-slate-300: hsl(240, 18%, 85%);
   --clr-white: hsl(0, 0%, 98%);
@@ -48,12 +48,13 @@ body {
   font-family: var(--ff-main);
   background-color: var(--clr-white);
   color: var(--clr-slate-900);
+  margin: 0 auto;
 }
 
 /* utilities */
 
 .text-1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 110%;
 }
 
@@ -78,10 +79,102 @@ body {
 .text-5 {
   font-size: 1rem;
   line-height: 150%;
+  color: var(--clr-slate-600);
 }
 
 .container {
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: 1.5rem;
+}
+
+header {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+header img {
+  display: inline-block;
+}
+
+.hero {
+  padding: 4rem 0 2rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.grid__content {
+  max-width: 29rem;
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  place-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.btn__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero-image {
+  display: none;
+}
+/* tablet */
+@media (min-width: 40rem) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .btn__flex {
+    flex-direction: row;
+  }
+}
+
+/* laptop  */
+@media (min-width: 60rem) {
+  .text-1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-image {
+    display: block;
+    background-image: url("./assets/desktop/image-hero-right.png");
+  }
+}
+
+.btn--primary {
+  text-decoration: none;
+  background-color: var(--clr-cyan-600);
+  color: var(--clr-white);
+  padding: 1rem 40px;
+  border-radius: 29px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn--primary span {
+  color: var(--clr-cyan-300);
+}
+
+.btn--accent {
+  text-decoration: none;
+  background-color: var(--clr-purple-600);
+  color: var(--clr-white);
+  padding: 1rem 40px;
+  border-radius: 29px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
 }
