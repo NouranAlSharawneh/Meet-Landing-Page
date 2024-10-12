@@ -29,6 +29,7 @@ img,
 picture,
 video,
 canvas,
+source,
 svg {
   display: block;
   max-width: 100%;
@@ -139,17 +140,22 @@ header img {
 }
 
 /* laptop  */
-@media (min-width: 60rem) {
+@media (min-width: 51rem) {
   .text-1 {
     font-weight: 800;
     font-size: 3.5rem;
   }
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .hero-image {
+    width: 100%;
     display: block;
     background-image: url("./assets/desktop/image-hero-right.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
   }
 }
 
